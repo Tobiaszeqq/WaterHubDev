@@ -24,13 +24,13 @@ local UICorner_2 = Instance.new("UICorner")
 local fischpage = Instance.new("Frame")
 local infcash = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local aim = Instance.new("TextButton")
+local trident = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local fisch = Instance.new("TextButton")
+local aim = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local mm2 = Instance.new("TextButton")
+local fisch = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local other = Instance.new("TextButton")
+local mm2 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Lite = Instance.new("TextLabel")
 local visualpage = Instance.new("Frame")
@@ -38,6 +38,11 @@ local TextButton = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local trail = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local otherpage = Instance.new("Frame")
+local mm2page = Instance.new("Frame")
+local aimpage = Instance.new("Frame")
+local other = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 local scripts = Instance.new("Folder")
 local notify = Instance.new("Folder")
 
@@ -185,6 +190,24 @@ infcash.TextWrapped = true
 UICorner_3.Parent = infcash
 UICorner_3.CornerRadius = UDim.new(0, 5)
 
+trident.Name = "trident"
+trident.Parent = fischpage
+trident.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+trident.BackgroundTransparency = 0.30000001192092896
+trident.BorderColor3 = Color3.new(0, 0, 0)
+trident.BorderSizePixel = 0
+trident.Position = UDim2.new(0.202221096, 0, 0.0806451589, 0)
+trident.Size = UDim2.new(0, 73, 0, 50)
+trident.Font = Enum.Font.GothamBold
+trident.Text = "get trident"
+trident.TextColor3 = Color3.new(0, 0, 0)
+trident.TextScaled = true
+trident.TextSize = 30
+trident.TextWrapped = true
+
+UICorner_4.Parent = trident
+UICorner_4.CornerRadius = UDim.new(0, 5)
+
 aim.Name = "aim"
 aim.Parent = main
 aim.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
@@ -200,8 +223,8 @@ aim.TextScaled = true
 aim.TextSize = 20
 aim.TextWrapped = true
 
-UICorner_4.Parent = aim
-UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = aim
+UICorner_5.CornerRadius = UDim.new(0, 5)
 
 fisch.Name = "fisch"
 fisch.Parent = main
@@ -218,8 +241,8 @@ fisch.TextScaled = true
 fisch.TextSize = 20
 fisch.TextWrapped = true
 
-UICorner_5.Parent = fisch
-UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = fisch
+UICorner_6.CornerRadius = UDim.new(0, 5)
 
 mm2.Name = "mm2"
 mm2.Parent = main
@@ -236,25 +259,7 @@ mm2.TextScaled = true
 mm2.TextSize = 20
 mm2.TextWrapped = true
 
-UICorner_6.Parent = mm2
-UICorner_6.CornerRadius = UDim.new(0, 5)
-
-other.Name = "other"
-other.Parent = main
-other.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
-other.BackgroundTransparency = 0.30000001192092896
-other.BorderColor3 = Color3.new(0, 0, 0)
-other.BorderSizePixel = 0
-other.Position = UDim2.new(0.00941915251, 0, 0.657051265, 0)
-other.Size = UDim2.new(0, 56, 0, 39)
-other.Font = Enum.Font.GothamBold
-other.Text = "other"
-other.TextColor3 = Color3.new(1, 1, 1)
-other.TextScaled = true
-other.TextSize = 20
-other.TextWrapped = true
-
-UICorner_7.Parent = other
+UICorner_7.Parent = mm2
 UICorner_7.CornerRadius = UDim.new(0, 5)
 
 Lite.Name = "Lite"
@@ -263,7 +268,7 @@ Lite.BackgroundColor3 = Color3.new(1, 1, 1)
 Lite.BackgroundTransparency = 1
 Lite.BorderColor3 = Color3.new(0, 0, 0)
 Lite.BorderSizePixel = 0
-Lite.Position = UDim2.new(0.326530606, 0, 0.0352564119, 0)
+Lite.Position = UDim2.new(0.35164836, 0, 0.0352564119, 0)
 Lite.Size = UDim2.new(0, 77, 0, 23)
 Lite.Font = Enum.Font.GothamBold
 Lite.LineHeight = 0.9800000190734863
@@ -314,6 +319,54 @@ trail.TextSize = 30
 UICorner_9.Parent = trail
 UICorner_9.CornerRadius = UDim.new(0, 5)
 
+otherpage.Name = "otherpage"
+otherpage.Parent = main
+otherpage.BackgroundColor3 = Color3.new(1, 1, 1)
+otherpage.BackgroundTransparency = 1
+otherpage.BorderColor3 = Color3.new(0, 0, 0)
+otherpage.BorderSizePixel = 0
+otherpage.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+otherpage.Size = UDim2.new(0, 525, 0, 248)
+otherpage.Visible = false
+
+mm2page.Name = "mm2page"
+mm2page.Parent = main
+mm2page.BackgroundColor3 = Color3.new(1, 1, 1)
+mm2page.BackgroundTransparency = 1
+mm2page.BorderColor3 = Color3.new(0, 0, 0)
+mm2page.BorderSizePixel = 0
+mm2page.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+mm2page.Size = UDim2.new(0, 525, 0, 248)
+mm2page.Visible = false
+
+aimpage.Name = "aimpage"
+aimpage.Parent = main
+aimpage.BackgroundColor3 = Color3.new(1, 1, 1)
+aimpage.BackgroundTransparency = 1
+aimpage.BorderColor3 = Color3.new(0, 0, 0)
+aimpage.BorderSizePixel = 0
+aimpage.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+aimpage.Size = UDim2.new(0, 525, 0, 248)
+aimpage.Visible = false
+
+other.Name = "other"
+other.Parent = main
+other.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+other.BackgroundTransparency = 0.30000001192092896
+other.BorderColor3 = Color3.new(0, 0, 0)
+other.BorderSizePixel = 0
+other.Position = UDim2.new(0.00941915251, 0, 0.657051265, 0)
+other.Size = UDim2.new(0, 56, 0, 39)
+other.Font = Enum.Font.GothamBold
+other.Text = "other"
+other.TextColor3 = Color3.new(1, 1, 1)
+other.TextScaled = true
+other.TextSize = 20
+other.TextWrapped = true
+
+UICorner_10.Parent = other
+UICorner_10.CornerRadius = UDim.new(0, 5)
+
 scripts.Name = "scripts"
 scripts.Parent = WaterHubNoWay
 
@@ -322,7 +375,7 @@ notify.Parent = scripts
 
 -- Scripts
 
-local function AODUSQC_fake_script() -- TextLabel.LocalScript 
+local function IDLGALP_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -359,8 +412,8 @@ local function AODUSQC_fake_script() -- TextLabel.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(AODUSQC_fake_script)()
-local function HRTQCZ_fake_script() -- main.draggablegui 
+coroutine.wrap(IDLGALP_fake_script)()
+local function NCVSID_fake_script() -- main.draggablegui 
 	local script = Instance.new('LocalScript', main)
 
 	local UIS = game:GetService('UserInputService')
@@ -399,17 +452,102 @@ local function HRTQCZ_fake_script() -- main.draggablegui
 	end)
 	
 end
-coroutine.wrap(HRTQCZ_fake_script)()
-local function ZMIE_fake_script() -- infcash.infmoneyxd 
-	local script = Instance.new('LocalScript', infcash)
+coroutine.wrap(NCVSID_fake_script)()
+local function KPDYI_fake_script() -- visual.openlol 
+	local script = Instance.new('LocalScript', visual)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").events.purchase:FireServer("Flimsy Rod", "Rod", nil, math.huge)
+	local screenGui = script.Parent.Parent
+	local frames = {screenGui.fischpage, screenGui.mm2page, screenGui.starterpage, screenGui.otherpage, screenGui.aimpage} 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		for _, frame in pairs(frames) do
+			frame.Visible = false
+		end
+	
+		local targetFrame = screenGui.visualpage 
+		targetFrame.Visible = true
 	end)
 	
 end
-coroutine.wrap(ZMIE_fake_script)()
-local function ZQPAX_fake_script() -- Lite.LocalScript 
+coroutine.wrap(KPDYI_fake_script)()
+local function MUFM_fake_script() -- infcash.infmoneyxd 
+	local script = Instance.new('LocalScript', infcash)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").events.purchase:FireServer("Flimsy Rod", "Rod")
+	end)
+	
+end
+coroutine.wrap(MUFM_fake_script)()
+local function EANJC_fake_script() -- trident.trident 
+	local script = Instance.new('LocalScript', trident)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").events.purchase:FireServer("Trident Rod", "Rod")
+	end)
+	
+end
+coroutine.wrap(EANJC_fake_script)()
+local function TAJXXWM_fake_script() -- aim.openlol 
+	local script = Instance.new('LocalScript', aim)
+
+	local screenGui = script.Parent.Parent
+	local frames = {screenGui.fischpage, screenGui.mm2page, screenGui.starterpage, screenGui.otherpage, screenGui.visualpage} 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		for _, frame in pairs(frames) do
+			frame.Visible = false
+		end
+	
+		local targetFrame = screenGui.aimpage
+		targetFrame.Visible = true
+	end)
+	
+end
+coroutine.wrap(TAJXXWM_fake_script)()
+local function CPBXKEJ_fake_script() -- fisch.openlol 
+	local script = Instance.new('LocalScript', fisch)
+
+	local screenGui = script.Parent.Parent
+	local frames = {screenGui.visualpage, screenGui.mm2page, screenGui.starterpage, screenGui.otherpage, screenGui.aimpage} 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		for _, frame in pairs(frames) do
+			frame.Visible = false
+		end
+	
+		local targetFrame = screenGui.fischpage
+		targetFrame.Visible = true
+	end)
+	
+end
+coroutine.wrap(CPBXKEJ_fake_script)()
+local function OYWYBJ_fake_script() -- mm2.openlol 
+	local script = Instance.new('LocalScript', mm2)
+
+	local screenGui = script.Parent.Parent
+	local frames = {screenGui.fischpage, screenGui.visualpage, screenGui.starterpage, screenGui.otherpage, screenGui.aimpage} 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		for _, frame in pairs(frames) do
+			frame.Visible = false
+		end
+	
+		local targetFrame = screenGui.mm2page
+		targetFrame.Visible = true
+	end)
+	
+end
+coroutine.wrap(OYWYBJ_fake_script)()
+local function JYXKZW_fake_script() -- Lite.LocalScript 
 	local script = Instance.new('LocalScript', Lite)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -446,8 +584,8 @@ local function ZQPAX_fake_script() -- Lite.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(ZQPAX_fake_script)()
-local function MRGUYN_fake_script() -- TextButton.espscriptnoway 
+coroutine.wrap(JYXKZW_fake_script)()
+local function WGMDZ_fake_script() -- TextButton.espscriptnoway 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -479,8 +617,8 @@ local function MRGUYN_fake_script() -- TextButton.espscriptnoway
 	
 	
 end
-coroutine.wrap(MRGUYN_fake_script)()
-local function BNDZTSE_fake_script() -- trail.trailnoway 
+coroutine.wrap(WGMDZ_fake_script)()
+local function PSDRQPX_fake_script() -- trail.trailnoway 
 	local script = Instance.new('LocalScript', trail)
 
 	-- it supposed to be a china hat but idk how to make one
@@ -492,7 +630,7 @@ local function BNDZTSE_fake_script() -- trail.trailnoway
 	
 	local function createHatEffect()
 		local character = player.Character or player.CharacterAdded:Wait()
-		local head = character:WaitForChild("Head")
+		local head = character:WaitForChild("LowerTorso")
 	
 		if head:FindFirstChild("HatEffect") then
 			warn("trail is already enabled")
@@ -526,8 +664,27 @@ local function BNDZTSE_fake_script() -- trail.trailnoway
 	button.MouseButton1Click:Connect(createHatEffect)
 	
 end
-coroutine.wrap(BNDZTSE_fake_script)()
-local function PDCYDD_fake_script() -- scripts.opengui 
+coroutine.wrap(PSDRQPX_fake_script)()
+local function VRBNNX_fake_script() -- other.openlol 
+	local script = Instance.new('LocalScript', other)
+
+	local screenGui = script.Parent.Parent
+	local frames = {screenGui.fischpage, screenGui.mm2page, screenGui.starterpage, screenGui.visualpage, screenGui.aimpage} 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		for _, frame in pairs(frames) do
+			frame.Visible = false
+		end
+	
+		local targetFrame = screenGui.otherpage
+		targetFrame.Visible = true
+	end)
+	
+end
+coroutine.wrap(VRBNNX_fake_script)()
+local function ZWBQZNX_fake_script() -- scripts.opengui 
 	local script = Instance.new('LocalScript', scripts)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -549,8 +706,8 @@ local function PDCYDD_fake_script() -- scripts.opengui
 	end)
 	
 end
-coroutine.wrap(PDCYDD_fake_script)()
-local function GLMLSON_fake_script() -- notify.notify 
+coroutine.wrap(ZWBQZNX_fake_script)()
+local function YBPM_fake_script() -- notify.notify 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -570,8 +727,8 @@ local function GLMLSON_fake_script() -- notify.notify
 	
 	
 end
-coroutine.wrap(GLMLSON_fake_script)()
-local function GKEGVB_fake_script() -- notify.notifyv2 
+coroutine.wrap(YBPM_fake_script)()
+local function PUOM_fake_script() -- notify.notifyv2 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -591,8 +748,8 @@ local function GKEGVB_fake_script() -- notify.notifyv2
 	
 	
 end
-coroutine.wrap(GKEGVB_fake_script)()
-local function QHJFF_fake_script() -- notify.print bc why not 
+coroutine.wrap(PUOM_fake_script)()
+local function YWGZSUW_fake_script() -- notify.print bc why not 
 	local script = Instance.new('LocalScript', notify)
 
 	print("WaterHub Is Loaded!")
@@ -600,4 +757,4 @@ local function QHJFF_fake_script() -- notify.print bc why not
 	print("Thank you for using WaterHub!")
 	
 end
-coroutine.wrap(QHJFF_fake_script)()
+coroutine.wrap(YWGZSUW_fake_script)()
