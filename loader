@@ -62,7 +62,7 @@ TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
 TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.058084771, 0, 0, 0)
+TextLabel.Position = UDim2.new(0.106750391, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.Text = "Water Hub"
@@ -148,10 +148,12 @@ visual.BorderColor3 = Color3.new(0, 0, 0)
 visual.BorderSizePixel = 0
 visual.Position = UDim2.new(0.00941915251, 0, 0.0352564119, 0)
 visual.Size = UDim2.new(0, 56, 0, 39)
-visual.Font = Enum.Font.SourceSans
+visual.Font = Enum.Font.GothamBold
 visual.Text = "visual"
 visual.TextColor3 = Color3.new(1, 1, 1)
+visual.TextScaled = true
 visual.TextSize = 20
+visual.TextWrapped = true
 
 UICorner_2.Parent = visual
 UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -191,10 +193,12 @@ aim.BorderColor3 = Color3.new(0, 0, 0)
 aim.BorderSizePixel = 0
 aim.Position = UDim2.new(0.00941915251, 0, 0.18910256, 0)
 aim.Size = UDim2.new(0, 56, 0, 39)
-aim.Font = Enum.Font.SourceSans
+aim.Font = Enum.Font.GothamBold
 aim.Text = "aimbot"
 aim.TextColor3 = Color3.new(1, 1, 1)
+aim.TextScaled = true
 aim.TextSize = 20
+aim.TextWrapped = true
 
 UICorner_4.Parent = aim
 UICorner_4.CornerRadius = UDim.new(0, 5)
@@ -207,10 +211,12 @@ fisch.BorderColor3 = Color3.new(0, 0, 0)
 fisch.BorderSizePixel = 0
 fisch.Position = UDim2.new(0.00941915251, 0, 0.342948705, 0)
 fisch.Size = UDim2.new(0, 56, 0, 39)
-fisch.Font = Enum.Font.SourceSans
+fisch.Font = Enum.Font.GothamBold
 fisch.Text = "fisch"
 fisch.TextColor3 = Color3.new(1, 1, 1)
+fisch.TextScaled = true
 fisch.TextSize = 20
+fisch.TextWrapped = true
 
 UICorner_5.Parent = fisch
 UICorner_5.CornerRadius = UDim.new(0, 5)
@@ -223,10 +229,12 @@ mm2.BorderColor3 = Color3.new(0, 0, 0)
 mm2.BorderSizePixel = 0
 mm2.Position = UDim2.new(0.00941915251, 0, 0.503205121, 0)
 mm2.Size = UDim2.new(0, 56, 0, 39)
-mm2.Font = Enum.Font.SourceSans
+mm2.Font = Enum.Font.GothamBold
 mm2.Text = "mm2"
 mm2.TextColor3 = Color3.new(1, 1, 1)
+mm2.TextScaled = true
 mm2.TextSize = 20
+mm2.TextWrapped = true
 
 UICorner_6.Parent = mm2
 UICorner_6.CornerRadius = UDim.new(0, 5)
@@ -239,10 +247,12 @@ other.BorderColor3 = Color3.new(0, 0, 0)
 other.BorderSizePixel = 0
 other.Position = UDim2.new(0.00941915251, 0, 0.657051265, 0)
 other.Size = UDim2.new(0, 56, 0, 39)
-other.Font = Enum.Font.SourceSans
+other.Font = Enum.Font.GothamBold
 other.Text = "other"
 other.TextColor3 = Color3.new(1, 1, 1)
+other.TextScaled = true
 other.TextSize = 20
+other.TextWrapped = true
 
 UICorner_7.Parent = other
 UICorner_7.CornerRadius = UDim.new(0, 5)
@@ -253,7 +263,7 @@ Lite.BackgroundColor3 = Color3.new(1, 1, 1)
 Lite.BackgroundTransparency = 1
 Lite.BorderColor3 = Color3.new(0, 0, 0)
 Lite.BorderSizePixel = 0
-Lite.Position = UDim2.new(0.273155421, 0, 0.0352564119, 0)
+Lite.Position = UDim2.new(0.326530606, 0, 0.0352564119, 0)
 Lite.Size = UDim2.new(0, 77, 0, 23)
 Lite.Font = Enum.Font.GothamBold
 Lite.LineHeight = 0.9800000190734863
@@ -312,7 +322,7 @@ notify.Parent = scripts
 
 -- Scripts
 
-local function JEGUVE_fake_script() -- TextLabel.LocalScript 
+local function AODUSQC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -349,8 +359,8 @@ local function JEGUVE_fake_script() -- TextLabel.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(JEGUVE_fake_script)()
-local function UIJDGKP_fake_script() -- main.draggablegui 
+coroutine.wrap(AODUSQC_fake_script)()
+local function HRTQCZ_fake_script() -- main.draggablegui 
 	local script = Instance.new('LocalScript', main)
 
 	local UIS = game:GetService('UserInputService')
@@ -389,8 +399,8 @@ local function UIJDGKP_fake_script() -- main.draggablegui
 	end)
 	
 end
-coroutine.wrap(UIJDGKP_fake_script)()
-local function RTKS_fake_script() -- infcash.infmoneyxd 
+coroutine.wrap(HRTQCZ_fake_script)()
+local function ZMIE_fake_script() -- infcash.infmoneyxd 
 	local script = Instance.new('LocalScript', infcash)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -398,8 +408,8 @@ local function RTKS_fake_script() -- infcash.infmoneyxd
 	end)
 	
 end
-coroutine.wrap(RTKS_fake_script)()
-local function IEQWUKK_fake_script() -- Lite.LocalScript 
+coroutine.wrap(ZMIE_fake_script)()
+local function ZQPAX_fake_script() -- Lite.LocalScript 
 	local script = Instance.new('LocalScript', Lite)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -436,8 +446,8 @@ local function IEQWUKK_fake_script() -- Lite.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(IEQWUKK_fake_script)()
-local function BWSW_fake_script() -- TextButton.espscriptnoway 
+coroutine.wrap(ZQPAX_fake_script)()
+local function MRGUYN_fake_script() -- TextButton.espscriptnoway 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -469,8 +479,8 @@ local function BWSW_fake_script() -- TextButton.espscriptnoway
 	
 	
 end
-coroutine.wrap(BWSW_fake_script)()
-local function ABJCR_fake_script() -- trail.trailnoway 
+coroutine.wrap(MRGUYN_fake_script)()
+local function BNDZTSE_fake_script() -- trail.trailnoway 
 	local script = Instance.new('LocalScript', trail)
 
 	-- it supposed to be a china hat but idk how to make one
@@ -516,8 +526,8 @@ local function ABJCR_fake_script() -- trail.trailnoway
 	button.MouseButton1Click:Connect(createHatEffect)
 	
 end
-coroutine.wrap(ABJCR_fake_script)()
-local function HUAODY_fake_script() -- scripts.opengui 
+coroutine.wrap(BNDZTSE_fake_script)()
+local function PDCYDD_fake_script() -- scripts.opengui 
 	local script = Instance.new('LocalScript', scripts)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -539,8 +549,8 @@ local function HUAODY_fake_script() -- scripts.opengui
 	end)
 	
 end
-coroutine.wrap(HUAODY_fake_script)()
-local function VFOD_fake_script() -- notify.notify 
+coroutine.wrap(PDCYDD_fake_script)()
+local function GLMLSON_fake_script() -- notify.notify 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -560,8 +570,8 @@ local function VFOD_fake_script() -- notify.notify
 	
 	
 end
-coroutine.wrap(VFOD_fake_script)()
-local function NXEB_fake_script() -- notify.notifyv2 
+coroutine.wrap(GLMLSON_fake_script)()
+local function GKEGVB_fake_script() -- notify.notifyv2 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -581,8 +591,8 @@ local function NXEB_fake_script() -- notify.notifyv2
 	
 	
 end
-coroutine.wrap(NXEB_fake_script)()
-local function KOOF_fake_script() -- notify.print bc why not 
+coroutine.wrap(GKEGVB_fake_script)()
+local function QHJFF_fake_script() -- notify.print bc why not 
 	local script = Instance.new('LocalScript', notify)
 
 	print("WaterHub Is Loaded!")
@@ -590,4 +600,4 @@ local function KOOF_fake_script() -- notify.print bc why not
 	print("Thank you for using WaterHub!")
 	
 end
-coroutine.wrap(KOOF_fake_script)()
+coroutine.wrap(QHJFF_fake_script)()
