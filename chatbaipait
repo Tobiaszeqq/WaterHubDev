@@ -1,11 +1,14 @@
 local Players = game:GetService("Players")
+local Chat = game:GetService("Chat")
+local LocalPlayer = Players.LocalPlayer
 
--- Define words to replace and their replacements
+-- Define the words to replace and their substitutes
 local replacements = {
-    nigga = "<ni><gg><a>",
-    fuck = "<fu><ck>",
+    nigga = "t",
+    fuck = "t",
 }
 
+-- Function to replace words in a message
 local function replaceWords(message)
     for targetWord, replacementWord in pairs(replacements) do
         local pattern = "%f[%a]" .. targetWord .. "%f[%A]"
@@ -14,14 +17,11 @@ local function replaceWords(message)
     return message
 end
 
-local function onPlayerChat(player, message)
-    if player == Players.LocalPlayer then
-        local modifiedMessage = replaceWords(message)
-        print("You said: " .. modifiedMessage) -- Display modified message in the output for testing
-    end
-end
-
--- Listen to player's chats locally
-Players.LocalPlayer.Chatted:Connect(function(message)
-    onPlayerChat(Players.LocalPlayer, message)
+-- Listen to the local player's chats and modify locally
+LocalPlayer.Chatted:Connect(function(originalMessage)
+    -- Replace words in the message
+    local modifiedMessage = replaceWords(originalMessage)
+    
+    -- Display the modified message locally
+    Chat:Chat(LocalPlayer.Character or LocalPlayer, modifiedMessage, Enum.ChatColor.Blue)
 end)
