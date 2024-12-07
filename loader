@@ -375,7 +375,7 @@ notify.Parent = scripts
 
 -- Scripts
 
-local function IDLGALP_fake_script() -- TextLabel.LocalScript 
+local function LUFTJ_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -412,8 +412,8 @@ local function IDLGALP_fake_script() -- TextLabel.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(IDLGALP_fake_script)()
-local function NCVSID_fake_script() -- main.draggablegui 
+coroutine.wrap(LUFTJ_fake_script)()
+local function GNST_fake_script() -- main.draggablegui 
 	local script = Instance.new('LocalScript', main)
 
 	local UIS = game:GetService('UserInputService')
@@ -452,8 +452,8 @@ local function NCVSID_fake_script() -- main.draggablegui
 	end)
 	
 end
-coroutine.wrap(NCVSID_fake_script)()
-local function KPDYI_fake_script() -- visual.openlol 
+coroutine.wrap(GNST_fake_script)()
+local function UFXMZL_fake_script() -- visual.openlol 
 	local script = Instance.new('LocalScript', visual)
 
 	local screenGui = script.Parent.Parent
@@ -471,26 +471,26 @@ local function KPDYI_fake_script() -- visual.openlol
 	end)
 	
 end
-coroutine.wrap(KPDYI_fake_script)()
-local function MUFM_fake_script() -- infcash.infmoneyxd 
+coroutine.wrap(UFXMZL_fake_script)()
+local function EFYI_fake_script() -- infcash.infmoneyxd 
 	local script = Instance.new('LocalScript', infcash)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").events.purchase:FireServer("Flimsy Rod", "Rod")
+		game:GetService("ReplicatedStorage").events.purchase:FireServer("Flimsy Rod", "Rod", nil, math.huge)
 	end)
 	
 end
-coroutine.wrap(MUFM_fake_script)()
-local function EANJC_fake_script() -- trident.trident 
+coroutine.wrap(EFYI_fake_script)()
+local function SUGAK_fake_script() -- trident.trident 
 	local script = Instance.new('LocalScript', trident)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").events.purchase:FireServer("Trident Rod", "Rod")
+		game:GetService("ReplicatedStorage").events.purchase:FireServer("Trident Rod", "Rod", nil, math.min)
 	end)
 	
 end
-coroutine.wrap(EANJC_fake_script)()
-local function TAJXXWM_fake_script() -- aim.openlol 
+coroutine.wrap(SUGAK_fake_script)()
+local function GFZC_fake_script() -- aim.openlol 
 	local script = Instance.new('LocalScript', aim)
 
 	local screenGui = script.Parent.Parent
@@ -508,8 +508,8 @@ local function TAJXXWM_fake_script() -- aim.openlol
 	end)
 	
 end
-coroutine.wrap(TAJXXWM_fake_script)()
-local function CPBXKEJ_fake_script() -- fisch.openlol 
+coroutine.wrap(GFZC_fake_script)()
+local function REKR_fake_script() -- fisch.openlol 
 	local script = Instance.new('LocalScript', fisch)
 
 	local screenGui = script.Parent.Parent
@@ -527,8 +527,8 @@ local function CPBXKEJ_fake_script() -- fisch.openlol
 	end)
 	
 end
-coroutine.wrap(CPBXKEJ_fake_script)()
-local function OYWYBJ_fake_script() -- mm2.openlol 
+coroutine.wrap(REKR_fake_script)()
+local function HSRVZI_fake_script() -- mm2.openlol 
 	local script = Instance.new('LocalScript', mm2)
 
 	local screenGui = script.Parent.Parent
@@ -546,8 +546,8 @@ local function OYWYBJ_fake_script() -- mm2.openlol
 	end)
 	
 end
-coroutine.wrap(OYWYBJ_fake_script)()
-local function JYXKZW_fake_script() -- Lite.LocalScript 
+coroutine.wrap(HSRVZI_fake_script)()
+local function UAGJ_fake_script() -- Lite.LocalScript 
 	local script = Instance.new('LocalScript', Lite)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -584,8 +584,8 @@ local function JYXKZW_fake_script() -- Lite.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(JYXKZW_fake_script)()
-local function WGMDZ_fake_script() -- TextButton.espscriptnoway 
+coroutine.wrap(UAGJ_fake_script)()
+local function LKXQKKY_fake_script() -- TextButton.espscriptnoway 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -617,8 +617,8 @@ local function WGMDZ_fake_script() -- TextButton.espscriptnoway
 	
 	
 end
-coroutine.wrap(WGMDZ_fake_script)()
-local function PSDRQPX_fake_script() -- trail.trailnoway 
+coroutine.wrap(LKXQKKY_fake_script)()
+local function OSQWSCD_fake_script() -- trail.trailnoway 
 	local script = Instance.new('LocalScript', trail)
 
 	-- it supposed to be a china hat but idk how to make one
@@ -664,8 +664,8 @@ local function PSDRQPX_fake_script() -- trail.trailnoway
 	button.MouseButton1Click:Connect(createHatEffect)
 	
 end
-coroutine.wrap(PSDRQPX_fake_script)()
-local function VRBNNX_fake_script() -- other.openlol 
+coroutine.wrap(OSQWSCD_fake_script)()
+local function MUUN_fake_script() -- other.openlol 
 	local script = Instance.new('LocalScript', other)
 
 	local screenGui = script.Parent.Parent
@@ -683,8 +683,8 @@ local function VRBNNX_fake_script() -- other.openlol
 	end)
 	
 end
-coroutine.wrap(VRBNNX_fake_script)()
-local function ZWBQZNX_fake_script() -- scripts.opengui 
+coroutine.wrap(MUUN_fake_script)()
+local function OXYDM_fake_script() -- scripts.opengui 
 	local script = Instance.new('LocalScript', scripts)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -706,8 +706,8 @@ local function ZWBQZNX_fake_script() -- scripts.opengui
 	end)
 	
 end
-coroutine.wrap(ZWBQZNX_fake_script)()
-local function YBPM_fake_script() -- notify.notify 
+coroutine.wrap(OXYDM_fake_script)()
+local function VKDM_fake_script() -- notify.notify 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -727,8 +727,8 @@ local function YBPM_fake_script() -- notify.notify
 	
 	
 end
-coroutine.wrap(YBPM_fake_script)()
-local function PUOM_fake_script() -- notify.notifyv2 
+coroutine.wrap(VKDM_fake_script)()
+local function WPIUK_fake_script() -- notify.notifyv2 
 	local script = Instance.new('LocalScript', notify)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -748,8 +748,8 @@ local function PUOM_fake_script() -- notify.notifyv2
 	
 	
 end
-coroutine.wrap(PUOM_fake_script)()
-local function YWGZSUW_fake_script() -- notify.print bc why not 
+coroutine.wrap(WPIUK_fake_script)()
+local function XLEEY_fake_script() -- notify.print bc why not 
 	local script = Instance.new('LocalScript', notify)
 
 	print("WaterHub Is Loaded!")
@@ -757,4 +757,4 @@ local function YWGZSUW_fake_script() -- notify.print bc why not
 	print("Thank you for using WaterHub!")
 	
 end
-coroutine.wrap(YWGZSUW_fake_script)()
+coroutine.wrap(XLEEY_fake_script)()
