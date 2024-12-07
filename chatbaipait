@@ -1,27 +1,21 @@
-local Players = game:GetService("Players")
-local Chat = game:GetService("Chat")
-local LocalPlayer = Players.LocalPlayer
+local player = game.Players.LocalPlayer
 
--- Define the words to replace and their substitutes
-local replacements = {
-    nigga = "t",
-    fuck = "t",
+-- Funkcja zamieniająca słowa
+local wordReplacements = {
+    hello = "hi",
+    roblox = "game",
+    fun = "awesome"
 }
 
--- Function to replace words in a message
 local function replaceWords(message)
-    for targetWord, replacementWord in pairs(replacements) do
-        local pattern = "%f[%a]" .. targetWord .. "%f[%A]"
-        message = message:gsub(pattern, replacementWord)
+    local newMessage = message
+    for word, replacement in pairs(wordReplacements) do
+        newMessage = newMessage:gsub("%f[%a]" .. word .. "%f[%A]", replacement)
     end
-    return message
+    return newMessage
 end
 
--- Listen to the local player's chats and modify locally
-LocalPlayer.Chatted:Connect(function(originalMessage)
-    -- Replace words in the message
-    local modifiedMessage = replaceWords(originalMessage)
-    
-    -- Display the modified message locally
-    Chat:Chat(LocalPlayer.Character or LocalPlayer, modifiedMessage, Enum.ChatColor.Blue)
+player.Chatted:Connect(function(message)
+    local filteredMessage = replaceWords(message)
+    print("Przetworzona wiadomość:", filteredMessage)
 end)
