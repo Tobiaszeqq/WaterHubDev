@@ -1,33 +1,68 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
 -- Instances
 
-local ScreenGui = Instance.new("ScreenGui")
+local WaterHubNoWay = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
-local visualpage = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local starterpage = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local arandomline = Instance.new("Frame")
+local visual = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local fischpage = Instance.new("Frame")
+local infcash = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local aim = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local fisch = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local mm2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local other = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Lite = Instance.new("TextLabel")
+local visualpage = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local trail = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local scripts = Instance.new("Folder")
+local notify = Instance.new("Folder")
 
 -- Properties
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+WaterHubNoWay.Name = "WaterHubNoWay"
+WaterHubNoWay.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WaterHubNoWay.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+WaterHubNoWay.ResetOnSpawn = false
 
 main.Name = "main"
-main.Parent = ScreenGui
+main.Parent = WaterHubNoWay
 main.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+main.BackgroundTransparency = 0.10000000149011612
 main.BorderColor3 = Color3.new(0, 0, 0)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.221024171, 0, 0.161850199, 0)
-main.Size = UDim2.new(0, 578, 0, 312)
+main.Position = UDim2.new(0.161739603, 0, 0.161850199, 0)
+main.Size = UDim2.new(0, 637, 0, 312)
 
 TextLabel.Parent = main
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
 TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.058084771, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "Water Hub"
@@ -38,37 +73,14 @@ TextLabel.TextWrapped = true
 UICorner.Parent = main
 UICorner.CornerRadius = UDim.new(0, 5)
 
-visualpage.Name = "visualpage"
-visualpage.Parent = main
-visualpage.BackgroundColor3 = Color3.new(1, 1, 1)
-visualpage.BackgroundTransparency = 1
-visualpage.BorderColor3 = Color3.new(0, 0, 0)
-visualpage.BorderSizePixel = 0
-visualpage.Position = UDim2.new(0, 0, 0.160256416, 0)
-visualpage.Size = UDim2.new(0, 578, 0, 248)
-
-TextButton.Parent = visualpage
-TextButton.BackgroundColor3 = Color3.new(0.513726, 0.513726, 0.513726)
-TextButton.BorderColor3 = Color3.new(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0346020758, 0, 0.0806451589, 0)
-TextButton.Size = UDim2.new(0, 73, 0, 50)
-TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "esp"
-TextButton.TextColor3 = Color3.new(0, 0, 0)
-TextButton.TextSize = 30
-
-UICorner_2.Parent = TextButton
-UICorner_2.CornerRadius = UDim.new(0, 5)
-
 starterpage.Name = "starterpage"
 starterpage.Parent = main
 starterpage.BackgroundColor3 = Color3.new(1, 1, 1)
 starterpage.BackgroundTransparency = 1
 starterpage.BorderColor3 = Color3.new(0, 0, 0)
 starterpage.BorderSizePixel = 0
-starterpage.Position = UDim2.new(0, 0, 0.160256416, 0)
-starterpage.Size = UDim2.new(0, 578, 0, 248)
+starterpage.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+starterpage.Size = UDim2.new(0, 525, 0, 248)
 starterpage.Visible = false
 
 TextLabel_2.Parent = starterpage
@@ -83,9 +95,224 @@ TextLabel_2.Text = "Thank you for using Water Hub V1"
 TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_2.TextSize = 20
 
+TextLabel_3.Parent = starterpage
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.326989621, 0, 0.32661289, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "more features will be added soon"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 20
+
+TextLabel_4.Parent = starterpage
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0965134427, 0, 0.52822578, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "pls roblok dont patch the gui or we angy"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 20
+
+TextLabel_5.Parent = starterpage
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0965134427, 0, 0.854838729, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "created by _tobiaszeq_ and susas123"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 20
+
+arandomline.Name = "a random line"
+arandomline.Parent = main
+arandomline.BackgroundColor3 = Color3.new(0.192157, 0.192157, 0.192157)
+arandomline.BackgroundTransparency = 0.10000000149011612
+arandomline.BorderColor3 = Color3.new(0, 0, 0)
+arandomline.BorderSizePixel = 0
+arandomline.Position = UDim2.new(0.106750391, 0, 0, 0)
+arandomline.Size = UDim2.new(0, 7, 0, 312)
+
+visual.Name = "visual"
+visual.Parent = main
+visual.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+visual.BackgroundTransparency = 0.30000001192092896
+visual.BorderColor3 = Color3.new(0, 0, 0)
+visual.BorderSizePixel = 0
+visual.Position = UDim2.new(0.00941915251, 0, 0.0352564119, 0)
+visual.Size = UDim2.new(0, 56, 0, 39)
+visual.Font = Enum.Font.SourceSans
+visual.Text = "visual"
+visual.TextColor3 = Color3.new(1, 1, 1)
+visual.TextSize = 20
+
+UICorner_2.Parent = visual
+UICorner_2.CornerRadius = UDim.new(0, 5)
+
+fischpage.Name = "fischpage"
+fischpage.Parent = main
+fischpage.BackgroundColor3 = Color3.new(1, 1, 1)
+fischpage.BackgroundTransparency = 1
+fischpage.BorderColor3 = Color3.new(0, 0, 0)
+fischpage.BorderSizePixel = 0
+fischpage.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+fischpage.Size = UDim2.new(0, 525, 0, 248)
+
+infcash.Name = "inf cash"
+infcash.Parent = fischpage
+infcash.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+infcash.BackgroundTransparency = 0.30000001192092896
+infcash.BorderColor3 = Color3.new(0, 0, 0)
+infcash.BorderSizePixel = 0
+infcash.Position = UDim2.new(0.0346020758, 0, 0.0806451589, 0)
+infcash.Size = UDim2.new(0, 73, 0, 50)
+infcash.Font = Enum.Font.Unknown
+infcash.Text = "inf cash"
+infcash.TextColor3 = Color3.new(0, 0, 0)
+infcash.TextScaled = true
+infcash.TextSize = 30
+infcash.TextWrapped = true
+
+UICorner_3.Parent = infcash
+UICorner_3.CornerRadius = UDim.new(0, 5)
+
+aim.Name = "aim"
+aim.Parent = main
+aim.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+aim.BackgroundTransparency = 0.30000001192092896
+aim.BorderColor3 = Color3.new(0, 0, 0)
+aim.BorderSizePixel = 0
+aim.Position = UDim2.new(0.00941915251, 0, 0.18910256, 0)
+aim.Size = UDim2.new(0, 56, 0, 39)
+aim.Font = Enum.Font.SourceSans
+aim.Text = "aimbot"
+aim.TextColor3 = Color3.new(1, 1, 1)
+aim.TextSize = 20
+
+UICorner_4.Parent = aim
+UICorner_4.CornerRadius = UDim.new(0, 5)
+
+fisch.Name = "fisch"
+fisch.Parent = main
+fisch.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+fisch.BackgroundTransparency = 0.30000001192092896
+fisch.BorderColor3 = Color3.new(0, 0, 0)
+fisch.BorderSizePixel = 0
+fisch.Position = UDim2.new(0.00941915251, 0, 0.342948705, 0)
+fisch.Size = UDim2.new(0, 56, 0, 39)
+fisch.Font = Enum.Font.SourceSans
+fisch.Text = "fisch"
+fisch.TextColor3 = Color3.new(1, 1, 1)
+fisch.TextSize = 20
+
+UICorner_5.Parent = fisch
+UICorner_5.CornerRadius = UDim.new(0, 5)
+
+mm2.Name = "mm2"
+mm2.Parent = main
+mm2.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+mm2.BackgroundTransparency = 0.30000001192092896
+mm2.BorderColor3 = Color3.new(0, 0, 0)
+mm2.BorderSizePixel = 0
+mm2.Position = UDim2.new(0.00941915251, 0, 0.503205121, 0)
+mm2.Size = UDim2.new(0, 56, 0, 39)
+mm2.Font = Enum.Font.SourceSans
+mm2.Text = "mm2"
+mm2.TextColor3 = Color3.new(1, 1, 1)
+mm2.TextSize = 20
+
+UICorner_6.Parent = mm2
+UICorner_6.CornerRadius = UDim.new(0, 5)
+
+other.Name = "other"
+other.Parent = main
+other.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+other.BackgroundTransparency = 0.30000001192092896
+other.BorderColor3 = Color3.new(0, 0, 0)
+other.BorderSizePixel = 0
+other.Position = UDim2.new(0.00941915251, 0, 0.657051265, 0)
+other.Size = UDim2.new(0, 56, 0, 39)
+other.Font = Enum.Font.SourceSans
+other.Text = "other"
+other.TextColor3 = Color3.new(1, 1, 1)
+other.TextSize = 20
+
+UICorner_7.Parent = other
+UICorner_7.CornerRadius = UDim.new(0, 5)
+
+Lite.Name = "Lite"
+Lite.Parent = main
+Lite.BackgroundColor3 = Color3.new(1, 1, 1)
+Lite.BackgroundTransparency = 1
+Lite.BorderColor3 = Color3.new(0, 0, 0)
+Lite.BorderSizePixel = 0
+Lite.Position = UDim2.new(0.273155421, 0, 0.0352564119, 0)
+Lite.Size = UDim2.new(0, 77, 0, 23)
+Lite.Font = Enum.Font.Unknown
+Lite.LineHeight = 0.9800000190734863
+Lite.Text = "Lite"
+Lite.TextColor3 = Color3.new(0, 0, 0)
+Lite.TextScaled = true
+Lite.TextSize = 10
+Lite.TextWrapped = true
+
+visualpage.Name = "visualpage"
+visualpage.Parent = main
+visualpage.BackgroundColor3 = Color3.new(1, 1, 1)
+visualpage.BackgroundTransparency = 1
+visualpage.BorderColor3 = Color3.new(0, 0, 0)
+visualpage.BorderSizePixel = 0
+visualpage.Position = UDim2.new(0.12872842, 0, 0.160256416, 0)
+visualpage.Size = UDim2.new(0, 525, 0, 248)
+visualpage.Visible = false
+
+TextButton.Parent = visualpage
+TextButton.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+TextButton.BackgroundTransparency = 0.30000001192092896
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0346020758, 0, 0.0806451589, 0)
+TextButton.Size = UDim2.new(0, 73, 0, 50)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "esp"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 30
+
+UICorner_8.Parent = TextButton
+UICorner_8.CornerRadius = UDim.new(0, 5)
+
+trail.Name = "trail"
+trail.Parent = visualpage
+trail.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+trail.BackgroundTransparency = 0.30000001192092896
+trail.BorderColor3 = Color3.new(0, 0, 0)
+trail.BorderSizePixel = 0
+trail.Position = UDim2.new(0.202221096, 0, 0.0806451589, 0)
+trail.Size = UDim2.new(0, 73, 0, 50)
+trail.Font = Enum.Font.Unknown
+trail.Text = "trail"
+trail.TextColor3 = Color3.new(0, 0, 0)
+trail.TextSize = 30
+
+UICorner_9.Parent = trail
+UICorner_9.CornerRadius = UDim.new(0, 5)
+
+scripts.Name = "scripts"
+scripts.Parent = WaterHubNoWay
+
+notify.Name = "notify"
+notify.Parent = scripts
+
 -- Scripts
 
-local function WDVOUT_fake_script() -- TextLabel.LocalScript 
+local function JEGUVE_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
@@ -122,41 +349,8 @@ local function WDVOUT_fake_script() -- TextLabel.LocalScript
 	changeTextColor()
 	
 end
-coroutine.wrap(WDVOUT_fake_script)()
-local function MFYER_fake_script() -- TextButton.espscriptnoway 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local Button = script.Parent 
-	
-	local function highlightPlayer(character)
-		if character:FindFirstChild("HighlightEffect") then return end 
-	
-		local highlight = Instance.new("Highlight")
-		highlight.Name = "HighlightEffect"
-		highlight.Adornee = character
-		highlight.FillColor = Color3.fromRGB(0, 255, 0)
-		highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
-		highlight.Parent = character
-	end
-	
-	local function highlightAllPlayers()
-		for _, player in pairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and player.Character then
-				highlightPlayer(player.Character)
-			end
-		end
-	end
-	
-	Button.MouseButton1Click:Connect(function()
-		highlightAllPlayers()
-	end)
-	
-	
-end
-coroutine.wrap(MFYER_fake_script)()
-local function UAZS_fake_script() -- main.draggablegui 
+coroutine.wrap(JEGUVE_fake_script)()
+local function UIJDGKP_fake_script() -- main.draggablegui 
 	local script = Instance.new('LocalScript', main)
 
 	local UIS = game:GetService('UserInputService')
@@ -195,4 +389,205 @@ local function UAZS_fake_script() -- main.draggablegui
 	end)
 	
 end
-coroutine.wrap(UAZS_fake_script)()
+coroutine.wrap(UIJDGKP_fake_script)()
+local function RTKS_fake_script() -- infcash.infmoneyxd 
+	local script = Instance.new('LocalScript', infcash)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").events.purchase:FireServer("Flimsy Rod", "Rod", nil, math.huge)
+	end)
+	
+end
+coroutine.wrap(RTKS_fake_script)()
+local function IEQWUKK_fake_script() -- Lite.LocalScript 
+	local script = Instance.new('LocalScript', Lite)
+
+	local textLabel = script.Parent -- Upewnij się, że skrypt jest dzieckiem TextLabel
+	local transitionSpeed = 0.01 -- Im mniejsza liczba, tym szybsza zmiana
+	local lightBlue = Color3.fromRGB(173, 216, 230) -- Jasny niebieski (LightBlue)
+	local darkBlue = Color3.fromRGB(0, 0, 139) -- Ciemny niebieski (DarkBlue)
+	
+	-- Funkcja płynnej zmiany koloru
+	local function lerpColor(color1, color2, alpha)
+		return Color3.new(
+			color1.R + (color2.R - color1.R) * alpha,
+			color1.G + (color2.G - color1.G) * alpha,
+			color1.B + (color2.B - color1.B) * alpha
+		)
+	end
+	
+	-- Funkcja zmieniająca kolor płynnie w pętli
+	local function changeTextColor()
+		while true do
+			-- Z jasnego na ciemny
+			for i = 0, 1, transitionSpeed do
+				textLabel.TextColor3 = lerpColor(lightBlue, darkBlue, i)
+				wait(0.01)
+			end
+			-- Z ciemnego na jasny
+			for i = 0, 1, transitionSpeed do
+				textLabel.TextColor3 = lerpColor(darkBlue, lightBlue, i)
+				wait(0.01)
+			end
+		end
+	end
+	
+	-- Uruchomienie zmiany koloru
+	changeTextColor()
+	
+end
+coroutine.wrap(IEQWUKK_fake_script)()
+local function BWSW_fake_script() -- TextButton.espscriptnoway 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local Button = script.Parent 
+	
+	local function highlightPlayer(character)
+		if character:FindFirstChild("HighlightEffect") then return end 
+	
+		local highlight = Instance.new("Highlight")
+		highlight.Name = "HighlightEffect"
+		highlight.Adornee = character
+		highlight.FillColor = Color3.fromRGB(0, 255, 0)
+		highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+		highlight.Parent = character
+	end
+	
+	local function highlightAllPlayers()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character then
+				highlightPlayer(player.Character)
+			end
+		end
+	end
+	
+	Button.MouseButton1Click:Connect(function()
+		highlightAllPlayers()
+	end)
+	
+	
+end
+coroutine.wrap(BWSW_fake_script)()
+local function ABJCR_fake_script() -- trail.trailnoway 
+	local script = Instance.new('LocalScript', trail)
+
+	-- it supposed to be a china hat but idk how to make one
+	--  100% code is not from chatgpt :)
+	
+	local player = game.Players.LocalPlayer
+	
+	local button = script.Parent
+	
+	local function createHatEffect()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local head = character:WaitForChild("Head")
+	
+		if head:FindFirstChild("HatEffect") then
+			warn("trail is already enabled")
+			return
+		end
+	
+		local particleEmitter = Instance.new("ParticleEmitter")
+		particleEmitter.Name = "HatEffect"
+		particleEmitter.Parent = head
+	
+		particleEmitter.Texture = "rbxassetid://247944275"
+		particleEmitter.Rate = 50
+		particleEmitter.Lifetime = NumberRange.new(0.5, 0.7)
+		particleEmitter.Speed = NumberRange.new(0, 0)
+		particleEmitter.RotSpeed = NumberRange.new(0, 360) 
+		particleEmitter.Size = NumberSequence.new({
+			NumberSequenceKeypoint.new(0, 0), 
+			NumberSequenceKeypoint.new(0.5, 3),
+			NumberSequenceKeypoint.new(1, 0) 
+		})
+		particleEmitter.Transparency = NumberSequence.new({
+			NumberSequenceKeypoint.new(0, 0.5),
+			NumberSequenceKeypoint.new(1, 1) 
+		})
+		particleEmitter.Color = ColorSequence.new(Color3.new(0.258824, 1, 1)) 
+		particleEmitter.EmissionDirection = Enum.NormalId.Top
+	
+		particleEmitter.Enabled = true
+	end
+	
+	button.MouseButton1Click:Connect(createHatEffect)
+	
+end
+coroutine.wrap(ABJCR_fake_script)()
+local function HUAODY_fake_script() -- scripts.opengui 
+	local script = Instance.new('LocalScript', scripts)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local frame = script.Parent.Parent:WaitForChild("main")
+	local isFrameVisible = false 
+	
+	local function toggleFrame()
+		isFrameVisible = not isFrameVisible
+		frame.Visible = isFrameVisible
+	end
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if input.KeyCode == Enum.KeyCode.LeftControl then
+			toggleFrame()
+		end
+	end)
+	
+end
+coroutine.wrap(HUAODY_fake_script)()
+local function VFOD_fake_script() -- notify.notify 
+	local script = Instance.new('LocalScript', notify)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function showNotification(title, text, iconId)
+		StarterGui:SetCore("SendNotification", {
+			Title = title or "Achievement Unlocked!", 
+			Text = text or "You have unlocked something special!", 
+			Duration = 5 
+		})
+	end
+	
+	showNotification(
+		"WaterHub Lite",
+		"To open gui click left CTRL"
+	)
+	
+	
+end
+coroutine.wrap(VFOD_fake_script)()
+local function NXEB_fake_script() -- notify.notifyv2 
+	local script = Instance.new('LocalScript', notify)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function showNotification(title, text, iconId)
+		StarterGui:SetCore("SendNotification", {
+			Title = title or "Achievement Unlocked!", 
+			Text = text or "You have unlocked something special!", 
+			Duration = 3 
+		})
+	end
+	
+	showNotification(
+		"WaterHub Lite",
+		"Thank you for using WaterHub!"
+	)
+	
+	
+end
+coroutine.wrap(NXEB_fake_script)()
+local function KOOF_fake_script() -- notify.print bc why not 
+	local script = Instance.new('LocalScript', notify)
+
+	print("WaterHub Is Loaded!")
+	wait (1)
+	print("Thank you for using WaterHub!")
+	
+end
+coroutine.wrap(KOOF_fake_script)()
